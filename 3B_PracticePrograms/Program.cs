@@ -43,6 +43,11 @@ namespace _3B_PracticePrograms
             Console.WriteLine("Private Constructor (Source):");
             Console.WriteLine("Instance: " + source);
             Console.ReadLine();
+
+            //Interface
+            Lotus lotus = new Lotus();
+            lotus.Flower();
+            Console.ReadLine();
         }
     }
 }
