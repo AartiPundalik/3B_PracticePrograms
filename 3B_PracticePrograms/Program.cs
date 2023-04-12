@@ -48,9 +48,52 @@ namespace _3B_PracticePrograms
             Lotus lotus = new Lotus();
             lotus.Flower();
             Console.ReadLine();
+
+            //Public Access Modifier
+            var publicAccessSpecifiers = new AccessModifiers();
+            publicAccessSpecifiers.Value = 10;
+            var result = publicAccessSpecifiers.IncrementValue(publicAccessSpecifiers.Value);
+            Console.WriteLine(result);
+            Console.ReadLine();
+
+            // Private Access Modifier
+            var account = new BankAccount();
+            account.Deposit(500);
+            var balance = account.GetBalance();
+            Console.WriteLine(balance);
+            Console.ReadLine();
+
+            // Protected Access Modifier
+            var rectangle = new Rectangle(10, 5);
+            var area = rectangle.GetArea();
+            Console.WriteLine(area);
+            Console.ReadLine();
+
+            // Internal Access Modifier
+            var logger = new Logger();
+            var messageLog = logger.LogMessage("This is a message");
+            Console.WriteLine(messageLog);
+            Console.ReadLine();
+
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
         
     
 
